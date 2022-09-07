@@ -1,0 +1,33 @@
+#navbar {
+	background-color: var(--clr-base);
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 24px 0px 24px;
+	color: var(--text-primary);
+
+	.boardTitle {
+		display: inline-block;
+	}
+
+	.buttonWrapper {
+		display: inline-block;
+		height: 100%;
+
+		button {
+			background-color: var(--clr-primary);
+			color: var(--text-primary);
+			outline: none;
+			border: none;
+			border-radius: 20px;
+			padding: 8px 12px 8px 12px;
+		}
+	}
+
+	.vertical-align {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+	}
+}
