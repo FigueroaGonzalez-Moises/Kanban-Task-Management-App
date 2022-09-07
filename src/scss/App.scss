@@ -23,11 +23,23 @@ body {
 	height: 100vh;
 	width: 100vw;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 0.2fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 0.4fr 1fr 1fr 1.6fr;
 	grid-template-areas:
-		"sidebar nav nav nav"
-		"sidebar content content content"
-		"sidebar content content content"
-		"sidebar content content content";
+		"sidenav navbar navbar navbar"
+		"sidenav contentWrapper contentWrapper contentWrapper"
+		"sidenav contentWrapper contentWrapper contentWrapper"
+		"sidenav contentWrapper contentWrapper contentWrapper";
+
+	#sidenav {
+		grid-area: sidenav;
+	}
+
+	#navbar {
+		grid-area: navbar;
+	}
+
+	#contentWrapper {
+		grid-area: contentWrapper;
+	}
 }
