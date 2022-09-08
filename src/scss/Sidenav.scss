@@ -18,9 +18,35 @@
 	ul {
 		padding: 0;
 		margin: 16px 0px 16px 0px;
+		list-style-type: none;
+
 		li {
-			padding: 8px 0px 8px 10%;
 			color: var(--text-primary);
+
+			.liText {
+				display: inline-block;
+				padding-left: 8px;
+			}
+			.liContainer {
+				padding: 8px 0px 8px 10%;
+			}
+
+			.activeWrapper {
+				display: flex;
+				align-items: center;
+				z-index: 1;
+				position: relative;
+
+				height: 25px;
+
+				padding-top: 4px;
+				padding-bottom: 4px;
+				padding-left: calc(25px + 10%);
+				background-color: var(--clr-primary);
+				width: 85%;
+				border-radius: 25px;
+				margin-left: -25px;
+			}
 		}
 	}
 }

@@ -1,6 +1,7 @@
 import "scss/Sidenav.scss";
 import AppLogo from "components/AppLogo";
-import BoardIcon from "./Icons/BoardIcon";
+import BoardIcon from "components/Icons/BoardIcon";
+import PlusIcon from "components/Icons/PlusIcon";
 
 const Sidenav = () => {
 	return (
@@ -13,25 +14,36 @@ const Sidenav = () => {
 
 			{/* UL and list items here */}
 			<ul>
-				<li>All Boards (8)</li>
-
-				<li className="ul-active">
-					<BoardIcon />
-					Platform Launch
+				<li>
+					<div className="liContainer">All Boards (8)</div>
 				</li>
 
 				<li>
-					<BoardIcon />
-					Marketing Plan
+					<div className="activeWrapper">
+						<BoardIcon />
+						<div className="liText">Platform Launch</div>
+					</div>
 				</li>
 
 				<li>
-					<BoardIcon />
-					Roadmap
+					<div className="liContainer">
+						<BoardIcon />
+						<div className="liText">Marketing Plan</div>
+					</div>
+				</li>
+
+				<li>
+					<div className="liContainer">
+						<BoardIcon />
+						<div className="liText">Roadmap</div>
+					</div>
 				</li>
 
 				<li className="purple">
-					<BoardIcon />+ Create new board
+					<div className="liContainer">
+						<PlusIcon />
+						<div className="liText"> New Board</div>
+					</div>
 				</li>
 			</ul>
 		</div>
