@@ -1,0 +1,26 @@
+#sidenav {
+	background-color: var(--clr-base);
+
+	.purple {
+		color: var(--clr-primary);
+	}
+
+	.logoWrapper {
+		margin: 24px 0px 16px 0px;
+		padding: 0px 0px 0px 10%;
+		.sidenav-logo-text {
+			display: inline;
+			margin-left: 0.5rem;
+			color: var(--clr-logo);
+		}
+	}
+
+	ul {
+		padding: 0;
+		margin: 16px 0px 16px 0px;
+		li {
+			padding: 8px 0px 8px 10%;
+			color: var(--text-primary);
+		}
+	}
+}
