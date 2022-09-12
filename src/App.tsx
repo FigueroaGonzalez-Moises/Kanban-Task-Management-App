@@ -1,6 +1,6 @@
 import Content from "components/Content";
 import Navbar from "components/Navbar";
-import Sidenav from "components/Sidenav";
+import Sidenav from "components/Sidenav/Sidenav";
 import { AppCtx } from "Context";
 import React from "react";
 import { useState } from "react";

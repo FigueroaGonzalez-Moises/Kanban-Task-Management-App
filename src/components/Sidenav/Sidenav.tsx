@@ -2,7 +2,7 @@ import "scss/Sidenav.scss";
 import AppLogo from "components/AppLogo";
 import BoardIcon from "components/Icons/BoardIcon";
 import PlusIcon from "components/Icons/PlusIcon";
-import ThemeToggler from "./ThemeToggler";
+import ThemeToggler from "./ThemeToggler/ThemeToggler";
 
 const Sidenav = () => {
 	return (
