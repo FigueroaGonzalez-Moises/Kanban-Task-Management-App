@@ -2,17 +2,16 @@ import "scss/Sidenav.scss";
 import AppLogo from "components/AppLogo";
 import BoardIcon from "components/Icons/BoardIcon";
 import PlusIcon from "components/Icons/PlusIcon";
+import ThemeToggler from "./ThemeToggler";
 
 const Sidenav = () => {
 	return (
 		<div id="sidenav">
-			{/* LOGO HERE */}
 			<div className="logoWrapper">
 				<AppLogo />
 				<h3 className="sidenav-logo-text">Kanban</h3>
 			</div>
 
-			{/* UL and list items here */}
 			<ul>
 				<li>
 					<div className="liContainer">All Boards (8)</div>
@@ -46,6 +45,8 @@ const Sidenav = () => {
 					</div>
 				</li>
 			</ul>
+
+			<ThemeToggler />
 		</div>
 	);
 };
